@@ -10,3 +10,7 @@ h1 {
     width: 240px;
     height: auto;
 }
+
+.btn:hover {
+    cursor: pointer;
+}
