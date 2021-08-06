@@ -21,6 +21,6 @@
       // "checkJs": true,                             /* Report errors in .js files. */
       
     },
-    "include": ["src/**/*"]
+    "include": ["src/**/*", "webpack"]
   }
   
