@@ -27,6 +27,6 @@
       // "checkJs": true,                             /* Report errors in .js files. */
       
     },
-    "include": ["src/**/*", "webpack", "src/declarations.d.ts"]
+    "include": ["src/**/*", "webpack", "declarations.d.ts"]
   }
   
