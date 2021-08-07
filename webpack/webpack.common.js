@@ -1,5 +1,6 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: path.resolve(__dirname, '..', './src/index.tsx'),
@@ -14,12 +15,12 @@ module.exports = {
         use: [
           {
             loader: 'babel-loader',
-          }
-        ]
+          },
+        ],
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
@@ -29,7 +30,7 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset/inline',
       },
-    ]
+    ],
   },
   output: {
     path: path.resolve(__dirname, '..', './build'),
@@ -38,7 +39,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', './src/index.html'),
-    })
-  ]
-   
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'source', to: 'dest' }],
+    }),
+  ],
+  stats: 'errors-only',
 }
