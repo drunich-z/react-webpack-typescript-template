@@ -1,6 +1,6 @@
-h1 {
-    color: orange;
-}
+/* h1 {
+    color: deepskyblue;
+} */
 
 .img-png {
     width: 300px;
@@ -9,6 +9,14 @@ h1 {
 .img-svg {
     width: 240px;
     height: auto;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    
 }
 
 .btn:hover {
