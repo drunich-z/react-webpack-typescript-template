@@ -3,22 +3,21 @@
 } */
 
 .img-png {
-    width: 300px;
-    height: auto;
+  width: 300px;
+  height: auto;
 }
 .img-svg {
-    width: 240px;
-    height: auto;
+  width: 240px;
+  height: auto;
 }
 
 .btn {
-    width: 150px;
-    height: 40px;
-    font-size: 20px;
-    cursor: pointer;
-    
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
