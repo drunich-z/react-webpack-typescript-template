@@ -1,7 +1,6 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
     ecmaVersion: 2020,
     sourceType: 'module',
   },
@@ -10,9 +9,8 @@ module.exports = {
       version: 'detect',
     },
   },
-  ignorePatterns: ['.eslintrc.js'], // !!! new and important part !!!
   extends: [
-    'airbnb-typescript',
+    'airbnb-typescript/base',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:@typescript-eslint/recommended',
@@ -21,8 +19,8 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:eslint-comments/recommended',
-    'prettier',
     'plugin:prettier/recommended',
+    'prettier',
   ],
   rules: {
     'no-unused-vars': 'off',
